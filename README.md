@@ -1,0 +1,2 @@
+# Glosor Deluxe
+Ett glosförhörsprojekt.
