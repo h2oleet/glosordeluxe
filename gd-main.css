@@ -1,0 +1,13 @@
+/* Läs mer om CSS här: https://www.w3schools.com/css/default.asp */
+
+body {
+  font-size: 25px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: #000;
+}
+.load_file {
+  font-size: 15px;
+}
+.example_text {
+  font-size: 10px;
+}

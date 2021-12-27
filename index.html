@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!-- Läs mer om charaset: https://www.w3schools.com/html/html_charset.asp -->
+        <meta charset="UTF-8">
+
+        <title>Glosor Deluxe</title>
+
+        <!-- Läs mer om css: https://www.w3schools.com/css/css_howto.asp -->
+        <link rel="stylesheet" href="gd-main.css">
+    </head>
+
+    <body>
+        <!--
+            Läs mer om
+            div:    https://www.w3schools.com/tags/tag_div.ASP
+            label:  https://www.w3schools.com/tags/tag_label.asp
+            input:  https://www.w3schools.com/tags/tag_input.asp
+            button: https://www.w3schools.com/tags/tag_button.asp
+            br:     https://www.w3schools.com/tags/tag_br.asp
+        -->
+        <div id="question"></div>
+        <label for="userAnswer">Svar:</label>
+        <input type="text" id="userAnswer" name="userAnswer">
+        <br /><br />
+
+        <div id="result"></div>
+        <button id="btnPrevious" onclick="previousQuestion()"></button>
+        <button id="btnCheckAnswer" onclick="checkAnswer()">Rätta</button>
+        <button id="btnNext" onclick="nextQuestion()"></button>
+        <br /><br /><br /><br />
+
+        <label class="load_file" for="urlFile">Hämta glosor från länk:</label>
+        <input type="text" id="url_file" name="url_file">
+        <button id="btnLoadUrlFile" onclick="loadFileFromURL(document.getElementById('url_file').value)">Hämta från URL</button>
+        <br />
+        <p class="example_text">Exempel:
+            https://raw.githubusercontent.com/h2oleet/glosordeluxe/gh-pages/glossary/glossary_sample.csv</p>
+        <br />
+        <label class="load_file" for="urlFile">Hämta glosor från fil:</label>
+        <input type="file" name="computer_file" id="computer_file" onchange="loadFileFromComputer()" accept=".txt,.csv">
+        <br />
+        <p class="example_text">
+            Exempel, spara nedan till en .csv-fil eller .txt-fil: <br />
+            svenska,engelska<br />
+            lila,purple<br />
+            gul,yellow<br />
+            svart,black<br />
+        </p>
+
+        <!-- Läs mer om javascript: https://www.w3schools.com/js/js_whereto.asp -->
+        <script src="gd-main.js"></script>
+    </body>
+
+</html>
